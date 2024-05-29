@@ -7,12 +7,12 @@ import PortalForm from './components/PortalForm'
 function App() {
 
   return (
-    <>
+    <div className="App"> 
     <Routes>
       <Route path='/' element={<GeneralForm/>} />
       <Route path='/portal' element={<PortalForm/>}/>
     </Routes>
-    </>
+    </div>
   )
 }
 

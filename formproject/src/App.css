@@ -1,0 +1,25 @@
+.App {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+form{
+width: 500px;
+}
+.inputDiv input{
+    width: 100%;
+    padding: 6px 5px;
+    margin: 5px 0px;
+    background-color: #536e96;
+    border: 2px solid #FEAE6F;
+    outline: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 9px;
+}
+::placeholder{color:antiquewhite}
+
+input:focus{
+    border-color:rgb(255, 127, 195);
+}

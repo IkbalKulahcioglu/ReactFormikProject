@@ -7,12 +7,13 @@ function GeneralForm() {
           email: '',
           age:'',
           password:'',
+          confirmPassword:''
         },
       });
       
   return (
     <form>
-        <div>
+        <div className="inputDiv">
             <label>Email</label>
             <input type="email"
             value={values.email}
@@ -20,7 +21,7 @@ function GeneralForm() {
             id="email"
             placeholder="Please enter your email"/>
         </div>
-        <div>
+        <div className="inputDiv">
             <label>Age</label>
             <input type="number"
             value={values.age}
@@ -28,7 +29,23 @@ function GeneralForm() {
             id="age"
             placeholder='Enter your age'/>
         </div>
-        
+        <div className="inputDiv">
+          <label>Password</label>
+          <input type="password"
+          value={values.password}
+          onChange={handleChange}
+          id="password"
+          placeholder='Enter your password'/>
+        </div>
+        <div className="inputDiv">
+          <label>Password again</label>
+          <input type='password'
+          value={values.confirmPassword}
+          onChange={handleChange}
+          id="confirmPassword"
+          placeholder='Enter your password again'/>
+        </div>
+        <button type='submit'>Submit</button>
     </form>
   )
 }

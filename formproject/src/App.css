@@ -1,25 +1,63 @@
 .App {
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
-form{
-width: 500px;
-}
-.inputDiv input{
-    width: 100%;
-    padding: 6px 5px;
-    margin: 5px 0px;
-    background-color: #536e96;
-    border: 2px solid #FEAE6F;
-    outline: none;
-    color: white;
-    font-size: 1rem;
-    border-radius: 9px;
-}
-::placeholder{color:antiquewhite}
 
-input:focus{
-    border-color:rgb(255, 127, 195);
+form {
+  width: 500px;
+}
+
+form label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.inputDiv {
+  margin-bottom: 10px;
+}
+
+ input {
+  width: 100%;
+  padding: 6px 5px;
+  margin: 5px 0px;
+  background-color: #536e96;
+  border: 2px solid #feae6f;
+  outline: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 9px;
+}
+
+::placeholder {
+  color: antiquewhite;
+}
+
+input:focus {
+  border-color: rgb(255, 127, 195);
+}
+
+button {
+  width: 100%;
+  margin: 10px 0px;
+  padding: 5px;
+  background-color: rgb(2, 131, 145);
+  border: 2px solid white;
+  color: white;
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.input-error {
+    border-color: #ff5a5a;
+}
+
+
+.error{
+    color: #fc8181;
+    font-size: 14px;
+    text-align: left;
 }

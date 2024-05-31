@@ -12,7 +12,7 @@ export const basicSchemas = yup.object().shape({
     .required("Entering age is mandatory"),
   password: yup
     .string()
-    .min(8, "password must consist of 8 characters")
+    .min(8, "Password must consist of 8 characters")
     .matches(
       passwordRules,
       "Please enter at least 1 upper case letter, 1 lower case letter and 1 number"
@@ -22,4 +22,16 @@ export const basicSchemas = yup.object().shape({
     .string()
     .oneOf([yup.ref("password")], "Passwords did not match")
     .required("Entering confirm pasword is mandatory"),
+});
+
+export const advencedSchemas = yup.object().shape({
+  userName: yup
+    .string()
+    .min(5, "User name must consist of 5 characters")
+    .required("Entering user name is mandatory"),
+  university: yup
+    .string()
+    .oneOf(["Fırat", "Boğaziçi", "İTÜ", "YTÜ"], "Please select your university")
+    .required("Selecting university is mandatory"),
+  isAccepted: yup.boolean().oneOf([true], "Accept the terms of use"),
 });

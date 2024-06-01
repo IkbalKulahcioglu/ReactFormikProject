@@ -31,7 +31,7 @@ export const advencedSchemas = yup.object().shape({
     .required("Entering user name is mandatory"),
   university: yup
     .string()
-    .oneOf(["Fırat", "Boğaziçi", "İTÜ", "YTÜ"], "Please select your university")
+    .oneOf(["fu", "bogazici", "itu", "ytu"], "Please select your university")
     .required("Selecting university is mandatory"),
   isAccepted: yup.boolean().oneOf([true], "Accept the terms of use"),
 });

@@ -18,7 +18,7 @@ form label {
   margin-bottom: 10px;
 }
 
- input {
+ input, select {
   width: 100%;
   padding: 6px 5px;
   margin: 5px 0px;
@@ -60,4 +60,22 @@ button {
     color: #fc8181;
     font-size: 14px;
     text-align: left;
+}
+
+.checkBox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.checkBox input{
+    width: auto;
+}
+
+.checkBox span{
+    margin-left: 5px;
+}
+
+.formLink{
+  color: white;
 }
